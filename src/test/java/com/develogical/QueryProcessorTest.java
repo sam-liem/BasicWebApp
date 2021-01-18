@@ -21,6 +21,11 @@ public class QueryProcessorTest {
     }
 
     @Test
+    public void knowsAboutHeroku() throws Exception {
+        assertThat(queryProcessor.process("Heroku"), containsString("cloud platforms"));
+    }
+
+    @Test
     public void isNotCaseSensitive() throws Exception {
         assertThat(queryProcessor.process("shakespeare"), containsString("playwright"));
     }
