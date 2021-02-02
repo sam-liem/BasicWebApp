@@ -34,4 +34,5 @@ public class QueryProcessorTest {
     public void knowsAboutMyTeam() throws Exception {
         assertThat(queryProcessor.process("what is your name"), containsString("dhru_peacock"));
     }
+
 }
