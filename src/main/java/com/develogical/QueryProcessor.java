@@ -12,6 +12,8 @@ public class QueryProcessor {
                     "One of the first cloud platforms, Heroku has been in development since June 2007," +
                     " when it supported only the Ruby programming language, but now supports Java," +
                     "Node.js, Scala, Clojure, Python, PHP, and Go.";
+        } else if (query.toLowerCase().contains("what is your name")) {
+            return "dhru_peacock";
         }
         return "";
     }
